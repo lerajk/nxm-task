@@ -5,8 +5,6 @@ var providers = ethers.providers;
 //connecting to the main Ethereum network
 var provider = providers.getDefaultProvider('homestead');
  
-//Token Selected is BAT (Basic Attention Token). Token details available at https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef 
-var address = "0x0d8775f648430679a709e98d2b0cb6250d2887ef";
 
 /*
 
@@ -18,7 +16,7 @@ STEPS Involved in the script include:
 
 */ 
 
-provider.getBlockNumber(address).then(function(blockNumber) {
+provider.getBlockNumber().then(function(blockNumber) {
 
 	//Current Block Number in the network
 	console.log("Current block number: " + blockNumber);
@@ -44,7 +42,7 @@ provider.getBlockNumber(address).then(function(blockNumber) {
 			 for(var i=0; i < 2; i++){
 				
 				provider.getTransaction(block.transactions[i]).then(function(transaction) {
-   		 		console.log(transaction);
+   		 		//console.log(transaction);
 
 				});	 
 
