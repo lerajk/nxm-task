@@ -18,7 +18,7 @@ STEPS Involved in the script include:
 
 */ 
 
-provider.getBlockNumber().then(function(blockNumber) {
+provider.getBlockNumber(address).then(function(blockNumber) {
 
 	//Current Block Number in the network
 	console.log("Current block number: " + blockNumber);
