@@ -1,0 +1,27 @@
+{
+  "name": "nxm-task",
+  "version": "1.0.0",
+  "description": "ERC20 token transaction query task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerajk/nxm-task.git"
+  },
+  "keywords": [
+    "ERC20",
+    "transaction",
+    "query"
+  ],
+  "author": "NXM Development Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lerajk/nxm-task/issues"
+  },
+  "homepage": "https://github.com/lerajk/nxm-task#readme",
+  "dependencies": {
+    "ethers": "^3.0.9"
+  }
+}
